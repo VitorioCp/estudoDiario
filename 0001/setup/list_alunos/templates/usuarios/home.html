@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Cadastre-me!</h1>
+        </nav>
+    </header>
+    <main>
+        <form action="{% url 'listagem_usuarios'%}" method="post">
+            Name:
+            <input name="nome" type="text">
+            Password:
+            <input name="password" type="password">
+            Email:
+            <input name="email" type="email">
+
+
+            <button type="submit">Enviar</button>
+        </form>
+        
+    </main>
+</body>
+
+</html>
